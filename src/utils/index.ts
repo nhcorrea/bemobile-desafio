@@ -4,7 +4,7 @@ import { dataProps } from '../context/context'
 export function SearchFilter ( data: dataProps[], search  : string) {
     return data.filter( 
                 (data : dataProps) => ( data.name.toUpperCase().includes(search.toUpperCase()) || 
-                                        data.name.toUpperCase().includes(search.toUpperCase()) || 
+                                        data.position.toUpperCase().includes(search.toUpperCase()) || 
                                         data.tel.includes(search))
             );
 }
