@@ -1,4 +1,4 @@
-import { ViewBody } from "./styles";
+import { ContainerHome } from "./styles";
 
 import Header from "../../components/Header";
 import TitleHeader from "../../components/TitleHeader";
@@ -9,7 +9,7 @@ import * as Animatable from 'react-native-animatable';
 
 export default function Home() {
     return (
-            <ViewBody>
+            <ContainerHome>
 
                 <Animatable.View
                     delay={300}
@@ -34,6 +34,6 @@ export default function Home() {
                    <Table />
                 </Animatable.View>
 
-            </ViewBody>
+            </ContainerHome>
     );
 }
