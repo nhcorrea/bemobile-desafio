@@ -2,7 +2,7 @@ import { LogoBeMobile,
          ContainerHeader 
 } from "./styles";
 
-import Logo from "../../../assets/logo.png";
+import Logo from "../../../assets/bemobile-logo.png";
 
 export default function Header () {
     return (

@@ -27,7 +27,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/befavicon.png"
+      "favicon": "./assets/bemobile-favicon.png"
     }
   }
 }
