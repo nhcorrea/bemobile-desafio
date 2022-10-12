@@ -1,21 +1,22 @@
 import { THEME } from "../../../../theme";
+import { RenderItemProps } from "../../../../utils/interfaces";
+
 import { CardEmployee, 
-         ImageEmployee, 
+         AvatarEmployee, 
          NameEmployee, 
          ContainerEmployee 
 } from "./styles";
+import MoreInfo from "../MoreInfo";
 
 import { useState } from "react";
 import { Feather } from "@expo/vector-icons"; 
 import * as Animatable from "react-native-animatable";
 
-import MoreInfo from "../MoreInfo";
-import { EmployeeProps } from "../../../../utils/interfaces";
-
-export default function Employee ({ data } : EmployeeProps) {
+export default function Employee ({ item } : RenderItemProps) {
 
     const [ isPressed, setIsPressed ] = useState(false);
-    const handleTouch = () => setIsPressed(!isPressed)
+    const handleTouch = () => setIsPressed(!isPressed);
+    const { dateIn, position, tel } = item;
 
     return (
             <ContainerEmployee>
@@ -25,12 +26,12 @@ export default function Employee ({ data } : EmployeeProps) {
                         onPress={handleTouch}
                     >
 
-                        <ImageEmployee 
-                                source={{ uri: data.image}} 
+                        <AvatarEmployee 
+                                source={{ uri: item.image}} 
                         />
 
                         <NameEmployee>
-                            {data.name}
+                            {item.name}
                         </NameEmployee>
 
                         <Feather 
@@ -40,17 +41,15 @@ export default function Employee ({ data } : EmployeeProps) {
                         />
 
                     </CardEmployee>
-
                     
                     { isPressed && 
                             <Animatable.View 
                                     animation="fadeIn"
                                     duration={800}
                             >
-                                    <MoreInfo dateIn={data.dateIn} tel={data.tel} position={data.position} />
+                                    <MoreInfo info={{ dateIn, position, tel }} />
                             </Animatable.View>
                     }
-                    
 
             </ContainerEmployee>
     )

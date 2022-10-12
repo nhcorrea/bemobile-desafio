@@ -1,13 +1,13 @@
 import { LogoBeMobile, 
-         ViewHeader 
+         ContainerHeader 
 } from "./styles";
 
-import Logo from "../../../assets/icons/logo.png";
+import Logo from "../../../assets/logo.png";
 
 export default function Header () {
     return (
-        <ViewHeader>
+        <ContainerHeader>
             <LogoBeMobile source={Logo} />
-        </ViewHeader>
+        </ContainerHeader>
     );
 }

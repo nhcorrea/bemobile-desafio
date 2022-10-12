@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const ViewLoading = styled.View`
+export const ContainerLoading = styled.View`
     height: 100%;
     justify-content: center;
 `;

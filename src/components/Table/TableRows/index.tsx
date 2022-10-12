@@ -4,7 +4,7 @@ import { FlatList } from "react-native";
 import Employee from "./Employee";
 
 import { Context } from "../../../context";
-import { ItemProps, 
+import { RenderItemProps, 
          DataProps 
 } from "../../../utils/interfaces";
 
@@ -16,7 +16,7 @@ export default function TableRows () {
             <FlatList
                     data={data}
                     keyExtractor={(data : DataProps) => data.name}
-                    renderItem={ ({item} : ItemProps) => <Employee data={item} />}
+                    renderItem={ ({ item } : RenderItemProps) => <Employee item={item} />}
             />
     )
 }

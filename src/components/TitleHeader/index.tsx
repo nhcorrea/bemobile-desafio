@@ -1,4 +1,6 @@
-import { ContainerTitle, TextTitle} from './styles'
+import { ContainerTitle, 
+         TextTitle 
+} from './styles'
 
 export default function TitleHeader () {
     return ( 

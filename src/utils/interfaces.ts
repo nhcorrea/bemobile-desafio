@@ -9,7 +9,7 @@ export interface DataProps {
     position: string;
     tel: string;
 }
-export interface ItemProps {
+export interface RenderItemProps {
     item : DataProps;
 }
 export interface EmployeeProps {
@@ -17,13 +17,13 @@ export interface EmployeeProps {
 }
 export interface ContextProps {
     data: DataProps[] | undefined;
-    backupData: DataProps[] | undefined;
-    setData: (newState: DataProps[]) => void;
-    setBackupData: (newState: []) => void;
     handleSearch: (search: string) => void;
 }
+
 export interface MoreInfoProps {
-    dateIn: string;
-    tel: string;
-    position: string;
+    info: {
+        dateIn: string;
+        tel: string;
+        position: string;
+    }
 }

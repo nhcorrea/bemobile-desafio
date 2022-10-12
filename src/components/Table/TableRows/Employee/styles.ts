@@ -13,7 +13,7 @@ export const CardEmployee = styled.TouchableOpacity`
     align-items: center;
     background-color: ${THEME.COLORS.WHITE};
 `;
-export const ImageEmployee = styled.Image`
+export const AvatarEmployee = styled.Image`
     width: 34px;
     height: 34px;
     border-radius: 17px;

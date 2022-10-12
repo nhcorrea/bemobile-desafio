@@ -1,7 +1,7 @@
 import { THEME } from "../../../../theme";
 import styled from "styled-components/native";
 
-export const MoreInfoContainer = styled.View`
+export const ContainerMoreInfo = styled.View`
     margin: 32px 0px 32px 0px;
 `;
 export const MoreInfoRow = styled.View`

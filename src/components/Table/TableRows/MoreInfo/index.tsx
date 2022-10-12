@@ -1,22 +1,22 @@
-import { MoreInfoContainer, 
+import { TelResolve } from "../../../../utils";
+import { MoreInfoProps } from "../../../../utils/interfaces";
+
+import { ContainerMoreInfo, 
          MoreInfoContent, 
          MoreInfoLabel, 
          MoreInfoRow 
 } from "./styles";
 
-import { TelResolve } from "../../../../utils";
-import { MoreInfoProps } from "../../../../utils/interfaces";
-
-export default function MoreInfo ( { dateIn, tel, position } : MoreInfoProps  ) {
+export default function MoreInfo ( { info } : MoreInfoProps ) {
     return (
-        <MoreInfoContainer>
+        <ContainerMoreInfo>
 
                 <MoreInfoRow>
                     <MoreInfoLabel>
                         Cargo:
                     </MoreInfoLabel>
                     <MoreInfoContent>
-                        {position}
+                        {info.position}
                     </MoreInfoContent>
                 </MoreInfoRow>
 
@@ -25,7 +25,7 @@ export default function MoreInfo ( { dateIn, tel, position } : MoreInfoProps  ) 
                         Data de admissão:
                     </MoreInfoLabel>
                     <MoreInfoContent>
-                        {dateIn}
+                        {info.dateIn}
                     </MoreInfoContent>
                 </MoreInfoRow>
 
@@ -34,10 +34,10 @@ export default function MoreInfo ( { dateIn, tel, position } : MoreInfoProps  ) 
                         Telefone:
                     </MoreInfoLabel>
                     <MoreInfoContent>
-                        {TelResolve(tel)}
+                        {TelResolve(info.tel)}
                     </MoreInfoContent>
                 </MoreInfoRow>
                 
-        </MoreInfoContainer>
+        </ContainerMoreInfo>
     )
 }

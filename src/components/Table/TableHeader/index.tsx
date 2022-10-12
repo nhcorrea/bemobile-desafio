@@ -1,15 +1,15 @@
-import { ViewContainer, 
-         ViewTableHeader, 
+import { ContainerTableHeader, 
+         BoxTableHeader, 
          Ellipse, 
          HeaderText, 
-         TableHeaderContent 
+         BoxHeaderContent 
 } from "./styles";
 
 export default function TableHeader () {
     return (
-            <ViewContainer>
-                        <ViewTableHeader>
-                            <TableHeaderContent>
+            <ContainerTableHeader>
+                        <BoxTableHeader>
+                            <BoxHeaderContent>
 
                                 <HeaderText>
                                         FOTO
@@ -19,8 +19,8 @@ export default function TableHeader () {
                                 </HeaderText>
                                 <Ellipse />
 
-                            </TableHeaderContent>
-                        </ViewTableHeader>
-            </ViewContainer>    
+                            </BoxHeaderContent>
+                        </BoxTableHeader>
+            </ContainerTableHeader>    
     );
 }

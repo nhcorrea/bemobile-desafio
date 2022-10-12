@@ -1,14 +1,14 @@
 import { THEME } from "../../theme";
 import styled from "styled-components/native";
 
-export const ViewSearch = styled.View`
+export const ContainerSearch = styled.View`
     margin-bottom: 20px;
 `;
 
 export const InputSearch = styled.TextInput`
     margin: 0px 20px 0px 20px;
-    border-radius: 4px;
     padding: 12px 16px;
+    border-radius: 4px;
     box-shadow: ${THEME.BOX_SHADOW.SHADOW_1};
     background-color: ${THEME.COLORS.WHITE};
 `;
