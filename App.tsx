@@ -1,11 +1,12 @@
 import { THEME } from "./src/theme";
-import { StatusBar } from "expo-status-bar";
-import { SafeAreaView } from "react-native-safe-area-context"
+
+import ContextProvider from "./src/context";
 
 import Loading from "./src/components/Loading";
 import Home from "./src/screen/Home";
-import ContextProvider from "./src/context/context";
 
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView } from "react-native-safe-area-context";
 import {
   useFonts,
   Roboto_400Regular,
@@ -22,8 +23,8 @@ export default function App() {
   return (
       <SafeAreaView>
         <ContextProvider>
-          {fontsLoaded ? <Home /> : <Loading />}
-          <StatusBar style='light' backgroundColor={THEME.COLORS.BLACK} />
+          { fontsLoaded ? <Home /> : <Loading /> }
+          <StatusBar style="light" backgroundColor={THEME.COLORS.BLACK} />
         </ContextProvider>
       </SafeAreaView>
   );

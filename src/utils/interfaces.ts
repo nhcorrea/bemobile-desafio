@@ -19,7 +19,6 @@ export interface ContextProps {
     data: DataProps[] | undefined;
     handleSearch: (search: string) => void;
 }
-
 export interface MoreInfoProps {
     info: {
         dateIn: string;
