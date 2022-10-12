@@ -1,11 +1,10 @@
+import { THEME } from "../../../theme";
 import styled from "styled-components/native";
-import { THEME } from "../../theme";
 
 export const ViewContainer = styled.View`
     margin: 0px 20px 0px 20px;
     box-shadow: ${THEME.BOX_SHADOW.SHADOW_1};
 `;
-
 export const ViewTableHeader = styled.View`
     background-color: ${THEME.COLORS.BLUE_PRIMARY};
     padding: 14px 0px;
@@ -23,7 +22,7 @@ export const Ellipse = styled.View`
     height: 8px;
     border-radius: 4px;
     background-color: ${THEME.COLORS.WHITE};
-    margin-right: 13.5px;
+    margin-right: 12px;
 `;
 export const HeaderText = styled.Text`
     color: ${THEME.COLORS.WHITE};

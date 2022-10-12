@@ -1,41 +1,43 @@
-import {MoreInfoContainer, MoreInfoContent, MoreInfoLabel, MoreInfoView} from './styles'
-import { TelResolve } from '../../utils'
+import { MoreInfoContainer, 
+         MoreInfoContent, 
+         MoreInfoLabel, 
+         MoreInfoRow 
+} from "./styles";
 
-interface MoreInfoProps {
-    dateIn: string;
-    tel: string;
-    position: string
-}
+import { TelResolve } from "../../../../utils";
+import { MoreInfoProps } from "../../../../utils/interfaces";
 
 export default function MoreInfo ( { dateIn, tel, position } : MoreInfoProps  ) {
     return (
         <MoreInfoContainer>
-                <MoreInfoView>
+
+                <MoreInfoRow>
                     <MoreInfoLabel>
                         Cargo:
                     </MoreInfoLabel>
                     <MoreInfoContent>
                         {position}
                     </MoreInfoContent>
-                </MoreInfoView>
+                </MoreInfoRow>
 
-                <MoreInfoView>
+                <MoreInfoRow>
                     <MoreInfoLabel>
                         Data de admissão:
                     </MoreInfoLabel>
                     <MoreInfoContent>
                         {dateIn}
                     </MoreInfoContent>
-                </MoreInfoView>
+                </MoreInfoRow>
 
-                <MoreInfoView>
+                <MoreInfoRow>
                     <MoreInfoLabel>
                         Telefone:
                     </MoreInfoLabel>
                     <MoreInfoContent>
                         {TelResolve(tel)}
                     </MoreInfoContent>
-                </MoreInfoView>
+                </MoreInfoRow>
+                
         </MoreInfoContainer>
     )
 }

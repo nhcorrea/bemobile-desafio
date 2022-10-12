@@ -1,12 +1,17 @@
-import {InputSearch, ViewSearch, ViewIcon} from './styles'
-import { Feather } from '@expo/vector-icons'; 
-import { THEME } from '../../theme';
-import { useContext } from 'react';
-import { Context } from '../../context/context';
+import { THEME } from "../../theme";
+import { InputSearch, 
+         ViewSearch, 
+         ViewIcon 
+} from "./styles";
+
+import { Feather } from "@expo/vector-icons";
+import { useContext } from "react";
+
+import { Context } from "../../context";
 
 export default function Search (){
 
-    const { handleSearch } : any = useContext(Context)
+    const { handleSearch } = useContext(Context)
 
     return (
         <ViewSearch>

@@ -1,6 +1,7 @@
-import { ActivityIndicator } from "react-native"
-import { ViewLoading } from "./styles";
 import { THEME } from "../../theme";
+import { ViewLoading } from "./styles";
+
+import { ActivityIndicator } from "react-native";
 
 export default function Loading (){
     return (

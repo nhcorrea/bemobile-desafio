@@ -1,10 +1,10 @@
+import { THEME } from "../../../../theme";
 import styled from "styled-components/native";
-import { THEME } from "../../theme";
 
 export const MoreInfoContainer = styled.View`
     margin: 32px 0px 32px 0px;
 `;
-export const MoreInfoView = styled.View`
+export const MoreInfoRow = styled.View`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -14,12 +14,12 @@ export const MoreInfoView = styled.View`
     border-color: ${THEME.COLORS.GRAY_10};
 `;
 export const MoreInfoLabel = styled.Text`
-    font-family: ${THEME.FONT_FAMILY.MEDIUM};
-    font-size: ${THEME.FONT_SIZE.HEADING_2_AND_3};
     color: ${THEME.COLORS.BLACK};
+    font-size: ${THEME.FONT_SIZE.HEADING_2_AND_3};
+    font-family: ${THEME.FONT_FAMILY.MEDIUM};
 `;
 export const MoreInfoContent = styled.Text`
-    font-family: ${THEME.FONT_FAMILY.REGULAR};
-    font-size: ${THEME.FONT_SIZE.HEADING_2_AND_3};
     color: ${THEME.COLORS.BLACK};
+    font-size: ${THEME.FONT_SIZE.HEADING_2_AND_3};
+    font-family: ${THEME.FONT_FAMILY.REGULAR};
 `;

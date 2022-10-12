@@ -1,7 +1,7 @@
-import styled from 'styled-components/native';
 import { THEME } from '../../theme'
+import styled from 'styled-components/native';
 
-export const ViewTitle = styled.View`
+export const ContainerTitle = styled.View`
     height: 74px;
     justify-content: center;
 `;

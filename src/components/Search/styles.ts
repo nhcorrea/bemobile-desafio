@@ -1,5 +1,5 @@
-import styled from "styled-components/native";
 import { THEME } from "../../theme";
+import styled from "styled-components/native";
 
 export const ViewSearch = styled.View`
     margin-bottom: 20px;
@@ -12,6 +12,7 @@ export const InputSearch = styled.TextInput`
     box-shadow: ${THEME.BOX_SHADOW.SHADOW_1};
     background-color: ${THEME.COLORS.WHITE};
 `;
+
 export const ViewIcon = styled.View`
     position: absolute;
     right: 32px;

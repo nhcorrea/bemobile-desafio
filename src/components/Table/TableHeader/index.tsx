@@ -3,13 +3,14 @@ import { ViewContainer,
          Ellipse, 
          HeaderText, 
          TableHeaderContent 
-} from "./styles"
+} from "./styles";
 
 export default function TableHeader () {
     return (
             <ViewContainer>
                         <ViewTableHeader>
                             <TableHeaderContent>
+
                                 <HeaderText>
                                         FOTO
                                 </HeaderText>
@@ -17,6 +18,7 @@ export default function TableHeader () {
                                         NOME
                                 </HeaderText>
                                 <Ellipse />
+
                             </TableHeaderContent>
                         </ViewTableHeader>
             </ViewContainer>    
