@@ -1,9 +1,9 @@
-import { dataProps } from '../context/context'
+import { DataProps } from "./interfaces";
 
 // FUNÇÃO FILTRA POR NOME OU POSIÇÃO OU TELEFONE
-export function SearchFilter ( data: dataProps[], search  : string) {
+export function SearchFilter ( data: DataProps[], search  : string) {
     return data.filter( 
-                (data : dataProps) => ( data.name.toUpperCase().includes(search.toUpperCase()) || 
+                (data : DataProps) => ( data.name.toUpperCase().includes(search.toUpperCase()) || 
                                         data.position.toUpperCase().includes(search.toUpperCase()) || 
                                         data.tel.includes(search))
             );
@@ -12,12 +12,12 @@ export function SearchFilter ( data: dataProps[], search  : string) {
 // FUNÇÃO GERA E FORMATA DATAS
 export function DataResolve () {
     //Função que gera data aleatória start = datainicial end=datafinal
-    const RandomDate = (DateStart : Date, DateEnd : Date) => new Date( DateStart.getTime() + (Math.random()) * ( DateEnd.getTime() - DateStart.getTime() ) );
+    const RandomDate = (DateStart : Date, DateEnd : Date) => new Date( DateStart.getTime() + (Math.random()) * (DateEnd.getTime() - DateStart.getTime()) );
     
     const ResultRandomDate = RandomDate(new Date(2015, 0, 1), new Date(2022, 12, 31));
 
     const Day = ( "0" + ( ResultRandomDate.getDay() > 0 ? ResultRandomDate.getDate() : ResultRandomDate.getDate() + 1 ) ).slice(-2); // Adiciona +1 caso o dia seja 0
-    const Month = ( "0" + ( ResultRandomDate.getMonth() + 1 ) ).slice(-2); //inicia em 0
+    const Month = ( "0" + ( ResultRandomDate.getMonth() + 1 ) ).slice(-2); // inicia em 0 por isso o +1
     const Year = ResultRandomDate.getFullYear();
 
     return `${Day}/${Month}/${Year}`;
