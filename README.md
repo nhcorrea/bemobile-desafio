@@ -8,6 +8,13 @@ Menor número de Libs foram utilizadas como recomendado nas condições do desaf
 
 [Figma do projeto](https://www.figma.com/file/yw6th52zE9bubewc6ayTg5/Teste---Be-mobile?node-id=0%3A1)
 
+## Running
+<div>
+    <img src="https://media3.giphy.com/media/FCNgnsQQjs3vWRm4vv/giphy.gif?cid=790b761180425634bf36b5b6a74815852c580e02f6194217&rid=giphy.gif&ct=g" />
+    <img src="https://media1.giphy.com/media/LEFSaYah68RppUltUW/giphy.gif?cid=790b76114d9ed10673c7aa2e34d1e7d574e9d31ce49ff8bb&rid=giphy.gif&ct=g" />
+    <img src="https://media4.giphy.com/media/qdLx2q9DnTPCHuGNno/giphy.gif?cid=790b761173ce13cc3a5eaa03c1f186fae4546d9e359905a3&rid=giphy.gif&ct=g" />
+</div>
+
 ## Tecnologias
 
 - [Expo][1]
@@ -37,6 +44,12 @@ Menor número de Libs foram utilizadas como recomendado nas condições do desaf
 
 ## Como utilizar
 ```bash
+# Clone o Repositório
+$ git clone https://github.com/nathahernandez/bemobile-desafio.git
+
+# Navegue para pasta do repositório
+$ cd bemobile-desafio
+
 # Instale as dependências do Projeto
 $ yarn
 
