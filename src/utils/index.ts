@@ -6,12 +6,12 @@ export function SearchFilter ( data: DataProps[], search  : string) {
                 (data : DataProps) => ( data.name.toUpperCase().includes(search.toUpperCase()) || 
                                         data.position.toUpperCase().includes(search.toUpperCase()) || 
                                         data.tel.includes(search))
-            );
+                );
 }
 
 // FUNÇÃO GERA E FORMATA DATAS
-export function DataResolve () {
-    //Função que gera data aleatória start = datainicial end=datafinal
+export function DateResolve () {
+    //Função que gera data aleatória start = datainicial end = datafinal
     const RandomDate = (DateStart : Date, DateEnd : Date) => new Date( DateStart.getTime() + (Math.random()) * (DateEnd.getTime() - DateStart.getTime()) );
     
     const ResultRandomDate = RandomDate(new Date(2015, 0, 1), new Date(2022, 12, 31));

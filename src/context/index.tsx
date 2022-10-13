@@ -1,5 +1,5 @@
 import { api } from "../services/api";
-import { SearchFilter, DataResolve } from "../utils"
+import { SearchFilter, DateResolve } from "../utils"
 import { ContextProviderProps, ContextProps, DataProps } from "../utils/interfaces";
 
 import { createContext, useState, useEffect } from "react";
@@ -19,7 +19,7 @@ export default function ContextProvider ({ children } : ContextProviderProps){
             const json = response.data.map((item : DataProps) => {
                 return {
                     ...item,
-                    dateIn: DataResolve()
+                    dateIn: DateResolve()
                 }
             });
 
