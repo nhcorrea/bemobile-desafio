@@ -2,7 +2,7 @@
 
 ## Sobre o Desafio
 Aplicação consiste em uma tabela com informações vindas da API simulada (json-server).  
-A tabela deve contem colunas com foto e nome do funcionário e ao pressionar no card do funcionário o card expande e mais informações são mostradas como: Cargo, Data de admissão e Telefone.  
+A tabela deve conter colunas com fotos e nomes dos funcionários e ao pressionar no card do funcionário o card expande e mais informações são mostradas como: Cargo, Data de admissão e Telefone.  
 Além disso também há possibilidade de pesquisar por Nome, Cargo ou Telefone.  
 Menor número de Libs foram utilizadas como recomendado nas condições do desafio.
 
