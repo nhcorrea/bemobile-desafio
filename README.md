@@ -34,13 +34,13 @@ Menor número de Libs foram utilizadas como recomendado nas condições do desaf
 [7]: https://github.com/oblador/react-native-animatable
 
 ## Pré Requisitos
-- [Git][1]
-- [Node.js][2]
-- [Yarn][3]
+- [Git][8]
+- [Node.js][9]
+- [Yarn][10]
 
-[1]: https://git-scm.com/
-[2]: https://nodejs.org/en/
-[3]: https://yarnpkg.com/
+[8]: https://git-scm.com/
+[9]: https://nodejs.org/en/
+[10]: https://yarnpkg.com/
 
 ## Como utilizar
 ```bash
