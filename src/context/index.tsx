@@ -6,7 +6,6 @@ import { createContext, useState, useEffect } from "react";
 
 export const Context = createContext({} as ContextProps);
 
-
 export default function ContextProvider ({ children } : ContextProviderProps){
 
     const [ data, setData ] = useState<DataProps[] | undefined>();
@@ -37,11 +36,10 @@ export default function ContextProvider ({ children } : ContextProviderProps){
     
     return (
         <Context.Provider 
-        value={{
-            data,
-            handleSearch
-        }}
-        
+            value={{
+                data,
+                handleSearch
+            }}
         >
             {children}
         </Context.Provider>
