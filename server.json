@@ -5,80 +5,80 @@
             "name": "Giovana L. Arruda",
             "image": "https://i.imgur.com/qswdMEG.png",
             "position": "Frontend",
-            "tel": "36888129"
-            
+            "tel": "1668336888129"
+
         },
         {
             "id": "1",
             "name": "Vanessa Machado",
             "image": "https://i.imgur.com/Cv5RlZh.png",
             "position": "Backend",
-            "tel": "25668556"
-            
+            "tel": "3475625668556"
+
         },
         {
             "id": "2",
             "name": "Juliana Borba",
             "image": "https://i.imgur.com/VYIRWR9.png",
             "position": "Mobile",
-            "tel": "27565828"
-            
+            "tel": "2791227565828"
+
         },
         {
             "id": "3",
             "name": "Josiane Dias",
             "image": "https://i.imgur.com/T2s0w5C.png",
             "position": "Fullstack",
-            "tel": "37216816"
-            
+            "tel": "3858437216816"
+
         },
         {
             "id": "4",
             "name": "Reginaldo Felipe",
             "image": "https://i.imgur.com/4JnOgVT.png",
             "position": "Designer",
-            "tel": "21462590"
-            
+            "tel": "6288821462590"
+
         },
         {
             "id": "5",
             "name": "Gabriel D.",
             "image": "https://i.imgur.com/llJotLa.png",
             "position": "Mobile",
-            "tel": "31535887"
-            
+            "tel": "2772331535887"
+
         },
         {
             "id": "6",
             "name": "Silvio  de Carvalho",
             "image": "https://i.imgur.com/v4wiIyo.png",
             "position": "CEO",
-            "tel": "34038015"
-            
+            "tel": "8912934038015"
+
         },
         {
             "id": "7",
             "name": "Ormar A. Amaral",
             "image": "https://i.imgur.com/oflsQP3.png",
             "position": "CTO",
-            "tel": "26750663"
-            
+            "tel": "8426426750663"
+
         },
         {
             "id": "8",
             "name": "Caroline Rocha da Silva",
             "image": "https://i.imgur.com/UrBfEte.png",
             "position": "Marketing",
-            "tel": "36815122"
-            
+            "tel": "3655836815122"
+
         },
         {
             "id": "9",
             "name": "Alexandre da Silva",
             "image": "https://i.imgur.com/1YymoV1.png",
             "position": "Tech Lead",
-            "tel": "26641607"
-            
+            "tel": "3752226641607"
+
         }
     ]
 }

@@ -1,7 +1,6 @@
-import styled from 'styled-components/native';
-import { THEME } from '../../theme';
+import styled from "styled-components/native";
 
 export const ContainerHome = styled.View`
     height: 100%;
-    background-color: ${THEME.COLORS.GRAY_00};
+    background-color: ${prop => prop.theme.COLORS.GRAY_00};
 `;
