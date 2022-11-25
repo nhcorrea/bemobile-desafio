@@ -1,33 +1,27 @@
 import { DataProps } from "./interfaces";
 
-// FUNÇÃO FILTRA POR NOME OU POSIÇÃO OU TELEFONE
-export function SearchFilter ( data: DataProps[], search  : string) {
-    return data.filter( 
-                (data : DataProps) => ( data.name.toUpperCase().includes(search.toUpperCase()) || 
-                                        data.position.toUpperCase().includes(search.toUpperCase()) || 
-                                        data.tel.includes(search))
-                );
+export function searchFilter ( data: DataProps[], search  : string) {
+	return data.filter(
+		(data : DataProps) => ( data.name.toUpperCase().includes(search.toUpperCase()) ||
+                                data.position.toUpperCase().includes(search.toUpperCase()) ||
+                                data.tel.includes(search))
+	);
 }
+export function dateResolve () {
+	const randomDate = (dateStart : Date, dateEnd : Date) => new Date(dateStart.getTime() + (Math.random()) * (dateEnd.getTime() - dateStart.getTime()));
+	const resultRandomDate = randomDate(new Date(2015, 0, 1), new Date(2022, 12, 31));
+	const day = ( "0" + ( resultRandomDate.getDay() > 0 ? resultRandomDate.getDate() : resultRandomDate.getDate() + 1 ) ).slice(-2);
+	const month = ( "0" + ( resultRandomDate.getMonth() + 1 ) ).slice(-2);
+	const year = resultRandomDate.getFullYear();
 
-// FUNÇÃO GERA E FORMATA DATAS
-export function DateResolve () {
-    //Função que gera data aleatória start = datainicial end = datafinal
-    const RandomDate = (DateStart : Date, DateEnd : Date) => new Date( DateStart.getTime() + (Math.random()) * (DateEnd.getTime() - DateStart.getTime()) );
-    
-    const ResultRandomDate = RandomDate(new Date(2015, 0, 1), new Date(2022, 12, 31));
-
-    const Day = ( "0" + ( ResultRandomDate.getDay() > 0 ? ResultRandomDate.getDate() : ResultRandomDate.getDate() + 1 ) ).slice(-2); // Adiciona +1 caso o dia seja 0
-    const Month = ( "0" + ( ResultRandomDate.getMonth() + 1 ) ).slice(-2); // inicia em 0 por isso o +1
-    const Year = ResultRandomDate.getFullYear();
-
-    return `${Day}/${Month}/${Year}`;
+	return `${day}/${month}/${year}`;
 }
+export function telResolve (tel : string) {
+	const ddi = tel.substring(0, 2);
+	const ddd = tel.substring(2, 4);
+	const nonoDigito = tel.substring(4, 5);
+	const partOne = tel.substring(5, (tel.length-4));
+	const partTwo = tel.substring((tel.length-4), tel.length);
 
-// FUNÇÃO PARA FORMATAR TELEFONE
-export function TelResolve (tel : string) {
-
-    const perTwo = Math.floor(tel.length / 2)
-    const FormatTel = tel.substring(0, perTwo)+"-"+tel.substring(perTwo, tel.length)
-
-    return `+55 (53) 9 ${FormatTel}`;
+	return `+${ddi} (${ddd}) ${nonoDigito} ${partOne} - ${partTwo}`;
 }
