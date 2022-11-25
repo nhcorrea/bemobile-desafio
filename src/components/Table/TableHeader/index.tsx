@@ -1,26 +1,23 @@
-import { ContainerTableHeader, 
-         BoxTableHeader, 
-         Ellipse, 
-         HeaderText, 
-         BoxHeaderContent 
+import {
+	ContainerTableHeader,
+	BoxTableHeader,
+	Ellipse,
+	HeaderText,
+	BoxHeaderContent
 } from "./styles";
 
 export default function TableHeader () {
-    return (
-            <ContainerTableHeader>
-                        <BoxTableHeader>
-                            <BoxHeaderContent>
+	return (
+		<ContainerTableHeader>
+			<BoxTableHeader>
+				<BoxHeaderContent>
 
-                                <HeaderText>
-                                        FOTO
-                                </HeaderText>
-                                <HeaderText>
-                                        NOME
-                                </HeaderText>
-                                <Ellipse />
+					<HeaderText>FOTO</HeaderText>
+					<HeaderText>NOME</HeaderText>
+					<Ellipse />
 
-                            </BoxHeaderContent>
-                        </BoxTableHeader>
-            </ContainerTableHeader>    
-    );
+				</BoxHeaderContent>
+			</BoxTableHeader>
+		</ContainerTableHeader>
+	);
 }

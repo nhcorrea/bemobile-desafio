@@ -1,43 +1,43 @@
-import { TelResolve } from "../../../../utils";
+import { telResolve } from "../../../../utils";
 import { MoreInfoProps } from "../../../../utils/interfaces";
-
-import { ContainerMoreInfo, 
-         MoreInfoContent, 
-         MoreInfoLabel, 
-         MoreInfoRow 
+import {
+	ContainerMoreInfo,
+	MoreInfoContent,
+	MoreInfoLabel,
+	MoreInfoRow
 } from "./styles";
 
 export default function MoreInfo ( { info } : MoreInfoProps ) {
-    return (
-        <ContainerMoreInfo>
 
-                <MoreInfoRow>
-                    <MoreInfoLabel>
+	const { position, dateIn, tel } = info;
+	return (
+		<ContainerMoreInfo>
+			<MoreInfoRow>
+				<MoreInfoLabel>
                         Cargo:
-                    </MoreInfoLabel>
-                    <MoreInfoContent>
-                        {info.position}
-                    </MoreInfoContent>
-                </MoreInfoRow>
+				</MoreInfoLabel>
+				<MoreInfoContent>
+					{position}
+				</MoreInfoContent>
+			</MoreInfoRow>
 
-                <MoreInfoRow>
-                    <MoreInfoLabel>
+			<MoreInfoRow>
+				<MoreInfoLabel>
                         Data de admissão:
-                    </MoreInfoLabel>
-                    <MoreInfoContent>
-                        {info.dateIn}
-                    </MoreInfoContent>
-                </MoreInfoRow>
+				</MoreInfoLabel>
+				<MoreInfoContent>
+					{dateIn}
+				</MoreInfoContent>
+			</MoreInfoRow>
 
-                <MoreInfoRow>
-                    <MoreInfoLabel>
+			<MoreInfoRow>
+				<MoreInfoLabel>
                         Telefone:
-                    </MoreInfoLabel>
-                    <MoreInfoContent>
-                        {TelResolve(info.tel)}
-                    </MoreInfoContent>
-                </MoreInfoRow>
-                
-        </ContainerMoreInfo>
-    )
+				</MoreInfoLabel>
+				<MoreInfoContent>
+					{telResolve(tel)}
+				</MoreInfoContent>
+			</MoreInfoRow>
+		</ContainerMoreInfo>
+	);
 }
