@@ -19,4 +19,4 @@ export const THEME = {
 		SHADOW_1: "0px 1px 2px rgba(0, 0, 0, 0.2)",
 		SHADOW_2: "0px 2px 4px rgba(0, 0, 0, 0.2)"
 	}
-};
+}

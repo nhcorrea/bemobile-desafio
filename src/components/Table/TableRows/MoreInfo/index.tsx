@@ -1,17 +1,17 @@
-import { telResolve } from "../../../../utils";
-import { MoreInfoProps } from "../../../../utils/interfaces";
+import { telResolve } from "../../../../utils"
+import { MoreInfoProps } from "../../../../utils/interfaces"
 import {
-	ContainerMoreInfo,
+	Container,
 	MoreInfoContent,
 	MoreInfoLabel,
 	MoreInfoRow
-} from "./styles";
+} from "./styles"
 
 export default function MoreInfo ( { info } : MoreInfoProps ) {
 
-	const { position, dateIn, tel } = info;
+	const { position, dateIn, tel } = info
 	return (
-		<ContainerMoreInfo>
+		<Container>
 			<MoreInfoRow>
 				<MoreInfoLabel>
                         Cargo:
@@ -38,6 +38,6 @@ export default function MoreInfo ( { info } : MoreInfoProps ) {
 					{telResolve(tel)}
 				</MoreInfoContent>
 			</MoreInfoRow>
-		</ContainerMoreInfo>
-	);
+		</Container>
+	)
 }

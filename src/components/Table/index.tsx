@@ -1,5 +1,5 @@
-import TableHeader from "./TableHeader";
-import TableRows from "./TableRows";
+import TableHeader from "./TableHeader"
+import TableRows from "./TableRows"
 
 export default function Table () {
 	return (
@@ -7,5 +7,5 @@ export default function Table () {
 			<TableHeader />
 			<TableRows />
 		</>
-	);
+	)
 }

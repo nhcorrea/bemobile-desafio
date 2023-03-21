@@ -1,14 +1,14 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react"
 
-import { api } from "../services/api";
-import { searchFilter, dateResolve } from "../utils";
-import { ContextProviderProps, ContextProps, DataProps } from "../utils/interfaces";
+import { api } from "../services/api"
+import { searchFilter, dateResolve } from "../utils"
+import { ContextProviderProps, ContextProps, DataProps } from "../utils/interfaces"
 
-export const Context = createContext({} as ContextProps);
+export const Context = createContext({} as ContextProps)
 
 export default function ContextProvider ({ children } : ContextProviderProps){
-	const [ data, setData ] = useState<DataProps[] | undefined>();
-	const [ backupData, setBackupData ] = useState([]);
+	const [ data, setData ] = useState<DataProps[] | undefined>()
+	const [ backupData, setBackupData ] = useState([])
 
 	useEffect(() => {
 		api.get("/employees")
@@ -17,18 +17,17 @@ export default function ContextProvider ({ children } : ContextProviderProps){
 					return {
 						...item,
 						dateIn: dateResolve()
-					};
-				});
-				setData(json);
-				setBackupData(json);
-			});
-	}, []);
+					}
+				})
+				setData(json)
+				setBackupData(json)
+			})
+	}, [])
 
 	const handleSearch = (search : string) => {
-		const arr = [...backupData];
-
-		setData(searchFilter(arr, search));
-	};
+		const arr = [...backupData]
+		setData(searchFilter(arr, search))
+	}
 
 	return (
 		<Context.Provider
@@ -39,5 +38,5 @@ export default function ContextProvider ({ children } : ContextProviderProps){
 		>
 			{children}
 		</Context.Provider>
-	);
+	)
 }

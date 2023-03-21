@@ -1,11 +1,11 @@
-import { ContainerTitle, TextTitle } from "./styles";
+import { Container, Title } from "./styles"
 
 export default function TitleHeader () {
 	return (
-		<ContainerTitle>
-			<TextTitle>
+		<Container>
+			<Title>
                     Funcionários
-			</TextTitle>
-		</ContainerTitle>
-	);
+			</Title>
+		</Container>
+	)
 }
